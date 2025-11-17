@@ -28,7 +28,7 @@ def cadastrar_produto():
         "quantidade": quantidade
     }
     produtos.append(produto)
-    print(f"\n✅ Produto '{nome}' cadastrado com sucesso!\n")
+    print(f"\n Produto '{nome}' cadastrado com sucesso!\n")
 
 def excluir_produto():
     if not produtos:
@@ -52,7 +52,7 @@ def listar_produtos():
         return
     print("\n--- Produtos Cadastrados ---")
     for p in produtos:
-        status = "⚠ Estoque baixo!" if p["quantidade"] < 5 else ""
+        status = " Estoque baixo!" if p["quantidade"] < 5 else ""
         print(f"ID: {p['id']}, Nome: {p['nome']}, Categoria: {p['categoria']}, Preço: R${p['preco']:.2f}, Quantidade: {p['quantidade']} {status}")
     print("----------------------------\n")
 
