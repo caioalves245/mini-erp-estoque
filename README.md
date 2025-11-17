@@ -42,7 +42,7 @@ def excluir_produto():
     for p in produtos:
         if p["id"] == id_excluir:
             produtos.remove(p)
-            print(f"\n🗑 Produto '{p['nome']}' excluído!\n")
+            print(f"\n Produto '{p['nome']}' excluído!\n")
             return
     print("Produto não encontrado.")
 
